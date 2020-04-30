@@ -1,0 +1,13 @@
+*CKG fonksiyonunun üretildiği metodda random fonksiyonunun dezavantajı şu şekildedir:
+
+Random fonksiyonu bilgisayarın saat hızının değişimi üzerine programlanmıştır.
+Derleyici çalıştığında çıktının üretilmesi esnasında bu saat hızının değişiminden daha
+hızlı bir çıktı üretilmektedir.
+Bunun için random sayı içeren değişkenlerin atanması sırasında, değişkenlerin arasına Thread.Sleep(100);
+metodu çağırılıp derleyiciyi 100ms bekletmekte ve saat hızının değişimine olanak tanımaktadır. Böylece,
+üretilen rastgele iki değişkenin aynı çıkması engellenmiştir.
+
+*Çıktı olarak alınan Initialization Vector(IV), Hexadecimal olarak çıktıya yansıtılmıştır.
+
+*Kullanıcının gireceği döngü sayısı ne kadar yüksek olursa o kadar karılma durumu fazla olacaktır.
+Ve IV değerlerinde benzerlik minimuma inecektir.
